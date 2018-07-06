@@ -1,0 +1,17 @@
+server:
+  port: 9020
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:9001/eureka/
+    enabled: true
+
+spring:
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://github.com/ufo20528/config.git  
+  application:
+    name: configServer
